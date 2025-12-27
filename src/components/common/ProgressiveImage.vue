@@ -24,6 +24,16 @@ defineProps({
   alt: {
     type: String,
     default: 'Image'
+  },
+  // 图片的宽度
+  width: {
+    type: Number,
+    default: 100
+  },
+  // 图片的高度
+  height: {
+    type: Number,
+    default: 100
   }
 })
 
@@ -39,9 +49,9 @@ const onImageLoad = () => {
 <style scoped lang="scss">
 .progressive-image-wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #f0f0f0;
+  width: v-bind('width + "px"');
+  height: v-bind('height + "px"');
+  // background-color: #f0f0f0;
   /* 图片加载前的默认底色 */
   // overflow: hidden; /* 防止放大后的模糊图溢出边框 */
 }
