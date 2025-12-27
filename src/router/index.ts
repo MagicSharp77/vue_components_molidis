@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'TheTabbar',
       component: () => import('../views/showViews/TheTabbar.vue'),
     },
+    {
+      path: '/ProgressiveImage',
+      name: 'ProgressiveImage',
+      component: () => import('../views/showViews/ProgressiveImage.vue'),
+    },
   ],
 })
 

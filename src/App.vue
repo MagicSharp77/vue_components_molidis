@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/YinYangCapsule">YinYangCapsule</RouterLink>
         <RouterLink to="/TheTabbar">TheTabbar</RouterLink>
+        <RouterLink to="/ProgressiveImage">ProgressiveImage</RouterLink>
       </nav>
     </div>
   </header>
