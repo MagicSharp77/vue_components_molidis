@@ -1,9 +1,5 @@
 <template>
-  <YinYangCapsule
-    :count="count"
-    @click-left="clickLeft"
-    @click-right="clickRight"
-  />
+  <YinYangCapsule @click-left="clickLeft" @click-right="clickRight" />
 </template>
 
 <script setup lang="ts">

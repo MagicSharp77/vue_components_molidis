@@ -1,15 +1,18 @@
 <template>
   <div class="product-image-area">
     <!-- <img :src="image3" alt="这是加载不了的示例图片" /> -->
-    <ProgressiveImage :placeholder-src="image1 + placeholderParams" :src="image1" alt="长方形图片" :width="500"
+    <!-- <ProgressiveImage :placeholder-src="image1 + placeholderParams" :src="image1" alt="长方形图片" :width="500"
       :height="300" />
     <ProgressiveImage :placeholder-src="image2 + placeholderParams" :src="image2" alt="正方形图片" :width="200"
-      :height="200" />
+      :height="200" /> -->
+    <BlurHashImage :src="image1" :blurhash="'L6PZfSi_.AyE_3t7t7R**0o#DgR4'" :width="'500px'" :height="'300px'" />
+    <BlurHashImage :src="image2" :blurhash="'L6PZfSi_.AyE_3t7t7R**0o#DgR4'" :width="'200px'" :height="'200px'" />
   </div>
 </template>
 
 <script setup lang="ts">
 import ProgressiveImage from '@/components/common/ProgressiveImage.vue'
+import BlurHashImage from '@/components/common/BlurHashImage.vue'
 const image1 = 'https://bucket-zxq-file-public-prod-1.oss-cn-shenzhen.aliyuncs.com/diancan/upload/2025-09-17/6a4e64dccd084ae083f85dcdaa7bf20b.png'
 const image2 = 'https://bucket-zxq-file-public-prod-1.oss-cn-shenzhen.aliyuncs.com/diancan/upload/2025-10-14/ab819dce95474899ba35c7ffc5280e97.png'
 // const image3 = '@/assets/logo.svg'
